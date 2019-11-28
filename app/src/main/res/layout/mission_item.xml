@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="任务详细描述"
+        android:textSize="20dp"
+        android:id="@+id/mission_details_textView"
+        />
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/mission_details_textView"
+        android:id="@+id/crossing_1"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginVertical="3dp"
+        android:background="#999d9c"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crossing_1"
+        android:layout_alignParentLeft="true"
+        android:hint="优先级"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/mission_priority_textView"
+        android:textColor="#5f3c23"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/crossing_1"
+    android:layout_toRightOf="@id/mission_priority_textView"
+    android:hint="标签"
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/mission_tag_textView"
+    android:textColor="#fcaf17"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="任务起始时间"
+        android:layout_toRightOf="@id/mission_tag_textView"
+        android:layout_below="@id/crossing_1"
+        android:id="@+id/mission_start_time"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#00ae9d"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="任务结束时间"
+        android:layout_toRightOf="@id/mission_start_time"
+        android:layout_below="@id/crossing_1"
+        android:id="@+id/mission_end_time"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#f15a22"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="@string/finished_mission_logo"
+        android:textSize="30dp"
+        android:src="@mipmap/unfinished_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/mission_unfinished_pic"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="@string/finished_mission_logo"
+        android:textSize="30dp"
+        android:src="@mipmap/finished_logo"
+        android:layout_toLeftOf="@id/mission_unfinished_pic"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/mission_finished_pic"
+        />
+
+</RelativeLayout>
+</LinearLayout>

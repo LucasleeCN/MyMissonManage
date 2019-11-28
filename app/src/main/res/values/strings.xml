@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MissionManage</string>
+    <string name="add_mission_logo">&#xe602;</string>
+    <string name="finished_mission_logo">&#xe605;</string>
+</resources>
